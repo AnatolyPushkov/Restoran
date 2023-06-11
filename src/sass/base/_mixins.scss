@@ -1,0 +1,13 @@
+@mixin btn_main {
+    border: 0;
+    width: 157px;
+    height: 47px;
+    background: #FF7400;
+    /* Текст кнопки */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+}

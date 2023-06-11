@@ -1,0 +1,95 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 900;
+    &__wrapper{
+        padding-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        margin: 0 auto 0 0;
+    }
+    &__logo-img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    &__nav {
+        margin-right: 35px;
+    }
+    &__nav-ul {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+    }
+    &__nav-li {
+        &_link {
+            padding-right: 20px;
+            font-family: 'Open Sans';
+            font-weight: 700;
+            font-size: 14px;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+        &_link:hover, &_link:active, &_link:focus {
+            color: #974400;
+            transition: 1s;
+        }
+    }
+    &__cart-img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    &__cart {
+        position: relative;
+        margin-right: 45px;
+    }
+    &__cart:after {
+        position: absolute;
+        left: 10px;
+        top: 3px;
+        content: '';
+        border: 1px solid #ffffff;
+        transform: rotate(90deg);
+        width: 50px;
+    }
+    &__contacts-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+    }
+    &__contacts-link {
+        text-decoration: none;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        color: #FFFFFF;
+    }
+    &__contacts-link:hover, &__contacts-link:active, &__contacts-link:focus {
+        color: #974400;
+        transition: 1s;
+    }
+    &__contacts-title {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: #FFFFFF;
+        margin-right: 45px;
+    }
+    &__btn {
+        @include btn_main;
+    }
+    &__btn:hover, &__btn:active, &__btn:focus {
+        background: #974400;
+        transition: 1s;
+    }
+}

@@ -1,0 +1,43 @@
+@import 'base/mixins';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Tinos Regular';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.footer {
+    height: 732px;
+    background: url(../images/footer-1.png) center center/cover no-repeat;
+}
+
+.menu__media {
+    display: none;
+}
+
+@import 'fonts/fonts';
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/descrp';
+@import 'blocks/story';
+@import 'blocks/dishes';
+@import 'blocks/menu';
+@import 'blocks/comments';
+@import 'blocks/gallery';
+@import 'blocks/personal';
+@import 'blocks/media';
+
+
+
+
+

@@ -1,0 +1,11 @@
+.personal {
+    &__wrapper {
+        padding: 100px 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+    &__item-img {
+        width: 100%;
+    }
+}

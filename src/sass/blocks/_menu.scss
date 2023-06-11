@@ -1,0 +1,110 @@
+.menu {
+    width: auto;
+    height: 100vh;
+    background: url(../images/menu_bc.png) center center/cover no-repeat;
+
+    &__title {
+        padding-top: 50px;
+        margin: 0 auto;
+        text-align: center;
+        &_txt {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 54px;
+            line-height: 62px;
+            color: #ffffff; 
+            text-shadow: 4px 4px 4px #000000;
+            
+        }
+    }
+    &__wrapper {
+        margin-top: 140px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+    }
+    &__items {
+        position: relative;
+        padding: 80px 60px 30px 60px;
+        background: #FFFFFF;
+        .recommended {
+            left: 0;
+            top: 0;
+            position: absolute;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            text-align: center;
+            background: #D67E34;
+            width: 124px;
+            height: 26px;
+            margin: 0 auto;
+            padding-top: 10px;
+        }
+        &-title {
+            font-family: 'Tinos';
+            text-align: center;
+            margin-top: 16px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 26px;
+        }
+        &-subtitle {
+            margin-top: 17px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            text-align: center;
+        }
+        &-btn {
+            margin-top: 20px;
+            padding-top: 14px;
+            text-align: center;
+            display: block;
+            width: 220px;
+            height: 36px;
+            background: #D67E34;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            color: #FFFFFF;
+            cursor: pointer;
+        }
+        &-btn:hover, &-btn:active, &-btn:focus {
+            background: #974400;
+            transition: 1s;
+        }
+        &-images {
+            position: relative;
+        }
+        &-img {
+            width: 100%;
+            border-radius: 100%;
+        }
+        &-price {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            background: #D67E34;
+            border: 7px solid #fff;
+            border-radius: 100%;
+            align-items: center;
+            &_txt {
+                padding: 32px 29px;
+                font-family: 'Cookie';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 33px;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+

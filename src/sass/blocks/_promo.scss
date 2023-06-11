@@ -1,0 +1,64 @@
+.promo {
+    min-height: 100vh;
+    background: url(../images/promo_bc.png) no-repeat center ;
+    background-size: cover;
+    &__wrapper {
+        width: 556px;
+        height: 179px;
+        padding: 322px 0 0 0;
+        text-align: left;
+    }
+    &__title {
+        padding-left: 30px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 57px;
+        color: #D67E35;
+    }
+    &__maintitle {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 80px;
+        line-height: 92px;
+        color: #D67E35;
+    }
+    &__subtitle {
+        margin-top: 12px;
+        position: relative;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: #FFFFFF;
+        padding-left: 160px;
+    }
+    &__subtitle:after {
+        position: absolute;
+        content: '';
+        border: 1px solid #C4C4C4;
+        width: 60px;
+        top: 10px;
+        right: 160px;
+    }
+    &__subtitle:before {
+        position: absolute;
+        content: '';
+        border: 1px solid #C4C4C4;
+        width: 60px;
+        top: 10px;
+        left: 90px;
+    }
+    &__btn {
+        margin-top: 20px;
+        margin-left: 165px;
+        @include btn_main;
+    }
+    &__btn:hover, &__btn:active, &__btn:focus {
+        background: #974400;
+        transition: 1s;
+    }
+}
+
+
+
